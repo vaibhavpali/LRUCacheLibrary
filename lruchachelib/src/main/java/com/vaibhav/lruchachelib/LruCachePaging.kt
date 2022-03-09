@@ -1,8 +1,9 @@
 package com.vaibhav.lruchachelib
 
+// ktlint-disable no-wildcard-imports
 import java.util.*
 
-class LruCache(private val cacheSize: Int) {
+class LruCachePaging(private val cacheSize: Int) {
     private var doubleQueue = LinkedList<Int>()
     private var hashSet = HashSet<Int>()
 
