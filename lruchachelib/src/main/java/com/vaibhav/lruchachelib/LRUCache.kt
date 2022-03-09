@@ -6,10 +6,10 @@ class LRUCache<T>(val capacity: Int) {
     }
 
     fun put(key: String, value: T) {
-        internalCache.put(key, value)
+        internalCache[key] = value
     }
 
-    fun get(key: String): T? = internalCache.get(key)
+    fun get(key: String): T? = internalCache[key]
 
     fun reset() {
         internalCache.clear()
